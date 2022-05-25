@@ -1,5 +1,14 @@
 import Home from './App';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
 
-// Use something like react-router-dom to manage multiple pages/routes
-
-export default Home;
+function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path='/' element={ <Home /> }></Route>
+            </Routes>
+        </Router>
+    );
+}
+export default App;
